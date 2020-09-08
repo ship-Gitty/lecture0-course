@@ -1,0 +1,16 @@
+title: Lecture0
+description: 'for web-development and web-designing '
+template:
+  repo: lecture0-template
+  name: lecture0
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
